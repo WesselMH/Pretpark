@@ -23,7 +23,7 @@ public class GebruikerService
     }
 
     public bool Verifieer (string email, string token){
-        if (DateTime.Today.CompareTo(inlogger.Token.verloopDatum) > 0 && token.Equals("token"))
+        if (DateTime.Now < inlogger.Token.verloopDatum && token.Equals("token"))
         {
             inlogger.Token = null;
             return true;

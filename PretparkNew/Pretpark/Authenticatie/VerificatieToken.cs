@@ -7,7 +7,7 @@ public class VerificatieToken
     public DateTime verloopDatum {get; set;}
 
     public VerificatieToken (){
-        token = "token";
-        verloopDatum = DateTime.Today.AddDays(3);
+        this.token = "token";
+        this.verloopDatum = DateTime.Now.AddDays(3);
     }
 }

@@ -16,10 +16,12 @@ public class Gebruiker
     }
 
     public bool Geverifieerd (){
-        if(Token == null){
-            return true;
-        }
-        return false;
+        this.Token = null;
+        return true;
+        // if(Token == null){
+        //     return true;
+        // }
+        // return false;
     }
 
     public int GenerateID(){
